@@ -52,6 +52,9 @@ PLAYERS.PlayerAdded:Connect(function(player: Player)
 	coins.Value = result.data.coins
 end)
 
+-------------------------------------------------------------------------------
+-- Player Leave
+-------------------------------------------------------------------------------
 PLAYERS.PlayerRemoving:Connect(function(player: Player)
 	local document = Store:GetDocument(tostring(player.UserId))
 
